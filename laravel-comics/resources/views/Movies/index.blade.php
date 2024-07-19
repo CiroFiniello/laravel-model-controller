@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('page-title', 'Movies')
+@section('page-title', 'Movies List')
 
 
 @section('main-content')
     <h3>
-        sono la sezione main content
+        Movies List
     </h3>
 @endsection

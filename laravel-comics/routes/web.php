@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\Guest\PageController;
+use App\Http\Controllers\Guest\MovieController;
+use App\Http\Controllers\Guest\PageController as GuestPageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,5 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', [PageController::class, 'index']);
-Route::get('/about-us', [PageController::class, 'aboutUs']);
+Route::get('/', [GuestPageController::class, 'index'])->name('guest.home');
+Route::get('/about-us', [GuestPageController::class, 'aboutUs'])->name('guest.about-us');
+Route::get('/movies', [MovieController::class, 'index'])->name('guest.movies.index');
+
