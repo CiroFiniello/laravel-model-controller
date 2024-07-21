@@ -1,5 +1,35 @@
 @import "~bootstrap/scss/bootstrap.scss";
 body {
-    background-color: yellow;
+    background-color: green;
 }
-
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 5);
+}
+.cards{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+.card{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    height: 450px;
+    border: 2px solid rgb(54, 0, 0);;
+    background-color: black;
+    color: red;
+    justify-content: center;
+    align-items: center;
+    h1 , h4{
+        color: white;
+    }
+}
