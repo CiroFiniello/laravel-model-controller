@@ -7,4 +7,5 @@
     <h3>
         Movies List
     </h3>
+    {{-- @dump($movies) --}}
 @endsection

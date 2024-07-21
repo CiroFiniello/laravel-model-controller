@@ -19,5 +19,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [GuestPageController::class, 'index'])->name('guest.home');
 Route::get('/about-us', [GuestPageController::class, 'aboutUs'])->name('guest.about-us');
-Route::get('/movies', [MovieController::class, 'index'])->name('guest.movies.index');
+Route::get('/movies', [MovieController::class, 'index'])->name('guest.Movies.index');
 
